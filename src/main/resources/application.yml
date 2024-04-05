@@ -1,0 +1,15 @@
+server:
+  port: 8082
+  
+spring:
+  jpa:
+    show-sql: true
+    database: h2
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+  sql:
+    init:
+      platform: h2
